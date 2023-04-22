@@ -1,0 +1,157 @@
+.navbar-brand img{
+    width: 100px;
+}
+section {
+    margin-top: 180px;
+}
+.secti-info {
+    margin-bottom: 100px;
+}
+.About {
+    margin-top: 80px;
+}
+body {
+    background-color: black !important;
+    color: white !important;
+}
+/***landing***/
+
+.landing {
+    height:100vh;
+}
+.landing::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    z-index: 1;
+}
+.row-landing {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 420px;
+}
+@media (max-width:452px) {
+    .row-landing {
+        width: 350px;
+    }
+}
+.landing video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.landing .tilte {
+    opacity: 0;
+    animation: title 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+.landing .tilte-p {
+    opacity: 0;
+    animation: title-p 0.5s ease forwards;
+    animation-delay: 0.5s;
+} 
+
+/***ramadan-competition***/
+.container .row h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.cont-fl {
+    height: calc(100vh - 127px);
+}
+.container .boxs .row {
+    gap: 65px;
+}
+.row-frist {
+    padding: 25px;
+}
+@media (max-width:440px) {
+    .row-frist {
+        padding: 0 !important;
+    }
+}
+.container .card,
+.img {
+    box-shadow:  2px 0px 20px 3px white;
+    padding: 10px;
+    background-color: black !important;
+    color: white;
+    width: 300px !important;
+    margin-right: 40px;
+}
+@media (max-width:422px) {
+    .btn-card {
+        width: 190px;
+    }
+}
+@media (max-width:576px) {
+    .container .card {
+        min-width: 243px !important;
+    }
+}
+.active1 {
+    color: brown;
+}
+.boxs-cards {
+    overflow: auto;
+}
+/*The Show*/
+.secti-info {
+    margin-top: 70px;
+}
+.secti-info .Choose {
+   content: "Choose A Question";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 200px;
+   font-size: 18px;
+   text-align: center;
+   color: white;
+}
+.img-info {
+    width: 100%;
+}
+.img-work {
+    border-radius: 20px;
+}
+.h3-info {
+    display: none;
+}
+.col-spec {
+    max-height: 526px;
+    overflow: auto;
+}
+@media (max-width:766px) {
+    .img-info {
+        margin-top: 40px !important;
+    }
+}
+@keyframes title{
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes title-p{
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
